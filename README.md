@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dogukanc760" alt="dogukanc760" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/https://twitter.com/forb3an?lang=tr" target="blank"><img src="https://img.shields.io/twitter/follow/https://twitter.com/forb3an?lang=tr?logo=twitter&style=for-the-badge" alt="https://twitter.com/forb3an?lang=tr" /></a> </p>
+<p align="left"> <a href="https://twitter.com/https://twitter.com/forb3an" target="blank"><img src="https://img.shields.io/twitter/follow/https://twitter.com/forb3an?logo=twitter&style=for-the-badge" alt="https://twitter.com/forb3an" /></a> </p>
 
 - 🌱 I’m currently learning **NestJs and other backend techs.**
 
@@ -15,7 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/https://twitter.com/forb3an?lang=tr" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="https://twitter.com/forb3an?lang=tr" height="30" width="40" /></a>
+<a href="https://twitter.com/https://twitter.com/forb3an" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="https://twitter.com/forb3an" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/do%c4%9fukan-canerler-ba4171187/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/do%c4%9fukan-canerler-ba4171187/" height="30" width="40" /></a>
 <a href="https://instagram.com/dogukan.sanchez" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="dogukan.sanchez" height="30" width="40" /></a>
 </p>
