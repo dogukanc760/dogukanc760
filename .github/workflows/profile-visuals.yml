@@ -1,0 +1,55 @@
+name: Refresh profile visuals
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3 * * *'
+  push:
+    paths:
+      - README.md
+      - scripts/render_activity.py
+      - .github/workflows/profile-visuals.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Render GitHub activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python3 scripts/render_activity.py
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake.svg?palette=github-dark&color_snake=%23b79aff&color_dots=%23142237,%23184855,%23217d81,%2336b4ad,%2351e3d4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated visuals
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/activity.svg assets/snake.svg
+          if git diff --cached --quiet; then
+            echo 'Visuals are already current.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh profile activity visuals [skip ci]'
+          git push
