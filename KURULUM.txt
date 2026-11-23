@@ -1,52 +1,33 @@
-DOGUKAN / CLOUD CONSOLE v3
+CYBERPUNK / DEVOPS / CLOUD — GITHUB PROFILE
 
-ÖNCE TASARIMI GÖR
-Paket içindeki preview.html dosyasını tarayıcıda aç.
-Animasyonlar ve açılır komut bölümleri yerel olarak çalışır.
-Bu görünüm GitHub'a yakındır; GitHub'ın tema ve yazı stilleri farklı olabilir.
+ÖNİZLEME
+preview.html dosyasını tarayıcıda aç. Tüm görseller dosyaya gömülüdür.
+Tüm bölümler açık görünür; açılır panel veya komut menüsü yoktur.
+Bu yerel önizleme GitHub'ın yerleşimini yaklaşık gösterir; tema boşlukları farklı olabilir.
 
-GITHUB'A YÜKLE
-Profil depon: dogukanc760/dogukanc760 (public)
-Aşağıdakileri deponun köküne, aynı yapıyla yükle:
-  README.md
-  assets/                  tüm dosyalar
-  scripts/render_activity.py
-  .github/workflows/profile-visuals.yml
+YÜKLEME
+Public profil depon: dogukanc760/dogukanc760
+README.md, assets/, scripts/ ve .github/ dosyalarını deponun köküne yükle.
+README ile assets birlikte yüklenmelidir.
+Mac'te gizli .github klasörünü görmek için Cmd+Shift+. kullanabilirsin.
+preview.html ve bu kurulum dosyasını GitHub'a yüklemek zorunlu değildir.
 
-Sadece README.md dosyasını yapıştırma; assets klasörü de gereklidir.
-.gitHub değil, klasör adı tam olarak .github olmalıdır.
-Mac'te noktayla başlayan klasörleri görmek için Cmd+Shift+. kullanabilirsin.
-preview.html, KURULUM.txt ve SOURCES.txt dosyalarını GitHub'a yüklemek zorunlu değildir.
+GITHUB VERİLERİ
+Actions > Refresh profile visuals > Run workflow.
+README ilk yüklendiğinde de workflow tetiklenir.
+İlk başarılı çalıştırmada aktivite kartı ve snake alanları gerçek verinle dolar.
+O zamana kadar 'AWAITING INITIAL GITHUB SYNC' yer tutucusu görünür.
+Kişisel token gerekmez; GitHub'ın GITHUB_TOKEN değeri kullanılır.
+İş akışı assets/activity.svg ve assets/snake.svg dosyalarını varsayılan dala commit eder.
+Günlük plan: 03:23 UTC / 06:23 Türkiye; GitHub'da çalışma zamanı gecikebilir.
+Depo kuralları veya Actions politikası bot commitlerini engelliyorsa iş akışı hata verir.
+Uzun süre etkinlik olmayan public depolarda zamanlama durabilir; Actions'tan yeniden etkinleştirilebilir.
+Bu paket henüz hesabına yüklenmedi ve workflow hesabında çalıştırılmadı.
 
-GITHUB ANİMASYONLARINI BAŞLAT
-GitHub > profil depon > Actions > Refresh profile visuals > Run workflow.
-README veya workflow ilk kez commit edildiğinde de workflow tetiklenir.
-Workflow varsayılan dalda bulunmalıdır.
-GitHub'ın kendi GITHUB_TOKEN değeri kullanılır; kişisel erişim anahtarı eklemene gerek yok.
-Workflow assets/activity.svg ve assets/snake.svg dosyalarını güncelleyip commit eder.
-Her gün yaklaşık 06:23 Türkiye saati (03:23 UTC) yeniden çalışır; GitHub zamanlaması gecikebilir.
-Repo kuralları botun varsayılan dala yazmasını engelliyorsa commit adımı başarısız olur.
-GitHub Actions politikası workflow'daki contents: write iznine izin vermelidir.
-Uzun süre etkinlik olmayan public depolarda GitHub zamanlamayı durdurabilir; Actions'tan tekrar etkinleştirebilirsin.
-
-İLK ÇALIŞTIRMA ÖNCESİ
-GitHub aktivitesi ve snake alanları 'NOT SYNCED YET' gösterir.
-Bunlar bozuk resim değildir. İlk başarılı workflow, yer tutucuları gerçek GitHub verisiyle değiştirir.
-İş akışı bu bilgisayarda GitHub hesabına karşı çalıştırılmadı; yükleme sonrası ilk Actions sonucunu kontrol et.
-Aktivite kartı GitHub API'sinin bu tokena görünür kıldığı katkıları gösterir.
-Takvim katkıları, public depo sayısı ve takipçi sayısı gerçek API verisidir; canlı sistem metriği değildir.
-Snake, Platane/snk açık kaynak projesini kullanır.
-
-GITHUB SINIRI
-GitHub README JavaScript, özel sayfa CSS'i, iframe veya komut çalıştıran input arayüzünü desteklemez.
-README içindeki gerçek etkileşim: açılır komut panelleri ve tıklanabilir navigasyon/proje kartlarıdır.
-Terminal animasyonu bir GIF'tir; tuş girdisi almaz.
-Tam interaktif terminal 'launch' düğmesinden dogukancanerler.com adresinde açılır.
-SVG animasyonları azaltılmış hareket tercihini destekler; hero GIF için terminal-hero-static.png alternatifi pakettedir.
-
-TEKNOLOJİ KAPSAMI
-Eski README'de, paylaşılan portföy kodunun beceri listesinde ve bu konuşmada doğrulanan araçlar kullanıldı.
-OpenShift, Rancher ve Keycloak kullanıcının güncellemesiyle eklendi.
-Önceki sohbetlerin bu konuşmada paylaşılmamış içeriğine erişildiği varsayılmadı.
-Boot animasyonundaki rastgele servis isimleri ayrıca deneyim iddiası olarak alınmadı.
-LinkedIn URL'si eski README'deki URL'nin düzeltilmiş halidir; CV adresi önceki deploy dosya yoludur.
+NOTLAR
+Animasyonlar görseldir; canlı altyapı durumunu göstermez.
+Takvim, public depo ve takipçi sayıları workflow çalıştığında gerçek GitHub API verisinden alınır.
+SVG görseller azaltılmış hareket tercihini destekler. GIF yerine terminal-hero-static.png kullanılabilir.
+Kaynaklar: https://github.com/Platane/snk ve https://github.com/actions/checkout
+Teknoloji ve deneyim içeriği paylaştığın README, portföy ve bu konuşmadaki eklemelerden derlendi.
+LinkedIn adresi eski README'ndeki bağlantının düzeltilmiş hali; CV adresi önceki deploy yoludur.
