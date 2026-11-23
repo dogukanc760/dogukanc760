@@ -1,25 +1,52 @@
-GITHUB PROFİL README KURULUMU
+DOGUKAN / CLOUD CONSOLE v3
 
-1. GitHub profil deponu aç: dogukanc760/dogukanc760.
-   Böyle bir depo yoksa kullanıcı adınla aynı isimde public depo oluştur.
-2. Bu paketteki README.md dosyasını deponun köküne koy; mevcut README.md'yi değiştir.
-3. assets klasörünü de aynı deponun köküne yükle:
-   assets/hero.svg
-   assets/delivery-flow.svg
-4. Değişiklikleri commit et. README ve assets aynı commit içinde olabilir.
-5. github.com/dogukanc760 profilini aç.
+ÖNCE TASARIMI GÖR
+Paket içindeki preview.html dosyasını tarayıcıda aç.
+Animasyonlar ve açılır komut bölümleri yerel olarak çalışır.
+Bu görünüm GitHub'a yakındır; GitHub'ın tema ve yazı stilleri farklı olabilir.
 
-ÖNEMLİ
-Sadece README metnini kopyalarsan SVG dosyaları yüklenmediği için görseller çıkmaz.
-GitHub Actions, token, ek servis ya da ücretli araç gerekmez.
-Animasyonlar dekoratiftir; canlı altyapı durumu veya gerçek performans ölçümü değildir.
-İnteraktif kısımlar GitHub'ın desteklediği açılır bölümler ve bağlantılardır.
-Tam terminal etkileşimi portföy bağlantısından açılır.
-Azaltılmış hareket tercihini destekleyen görüntüleyicilerde SVG animasyonları durur.
+GITHUB'A YÜKLE
+Profil depon: dogukanc760/dogukanc760 (public)
+Aşağıdakileri deponun köküne, aynı yapıyla yükle:
+  README.md
+  assets/                  tüm dosyalar
+  scripts/render_activity.py
+  .github/workflows/profile-visuals.yml
 
-İÇERİK
-LinkedIn adresi gönderdiğin eski README'deki bozuk URL'nin düzeltilmiş halidir.
-CV adresi önceki deploy paketindeki dosya yoludur.
-Bu iki bağlantının güncel hesabını/CV'ni açtığını yayınladıktan sonra kontrol et.
-İş deneyimi ve teknoloji bilgileri paylaştığın portföy kaynaklarından alınmıştır.
-GitHub hesabında henüz bir değişiklik yapılmadı; bu paket yüklemeye hazırdır.
+Sadece README.md dosyasını yapıştırma; assets klasörü de gereklidir.
+.gitHub değil, klasör adı tam olarak .github olmalıdır.
+Mac'te noktayla başlayan klasörleri görmek için Cmd+Shift+. kullanabilirsin.
+preview.html, KURULUM.txt ve SOURCES.txt dosyalarını GitHub'a yüklemek zorunlu değildir.
+
+GITHUB ANİMASYONLARINI BAŞLAT
+GitHub > profil depon > Actions > Refresh profile visuals > Run workflow.
+README veya workflow ilk kez commit edildiğinde de workflow tetiklenir.
+Workflow varsayılan dalda bulunmalıdır.
+GitHub'ın kendi GITHUB_TOKEN değeri kullanılır; kişisel erişim anahtarı eklemene gerek yok.
+Workflow assets/activity.svg ve assets/snake.svg dosyalarını güncelleyip commit eder.
+Her gün yaklaşık 06:23 Türkiye saati (03:23 UTC) yeniden çalışır; GitHub zamanlaması gecikebilir.
+Repo kuralları botun varsayılan dala yazmasını engelliyorsa commit adımı başarısız olur.
+GitHub Actions politikası workflow'daki contents: write iznine izin vermelidir.
+Uzun süre etkinlik olmayan public depolarda GitHub zamanlamayı durdurabilir; Actions'tan tekrar etkinleştirebilirsin.
+
+İLK ÇALIŞTIRMA ÖNCESİ
+GitHub aktivitesi ve snake alanları 'NOT SYNCED YET' gösterir.
+Bunlar bozuk resim değildir. İlk başarılı workflow, yer tutucuları gerçek GitHub verisiyle değiştirir.
+İş akışı bu bilgisayarda GitHub hesabına karşı çalıştırılmadı; yükleme sonrası ilk Actions sonucunu kontrol et.
+Aktivite kartı GitHub API'sinin bu tokena görünür kıldığı katkıları gösterir.
+Takvim katkıları, public depo sayısı ve takipçi sayısı gerçek API verisidir; canlı sistem metriği değildir.
+Snake, Platane/snk açık kaynak projesini kullanır.
+
+GITHUB SINIRI
+GitHub README JavaScript, özel sayfa CSS'i, iframe veya komut çalıştıran input arayüzünü desteklemez.
+README içindeki gerçek etkileşim: açılır komut panelleri ve tıklanabilir navigasyon/proje kartlarıdır.
+Terminal animasyonu bir GIF'tir; tuş girdisi almaz.
+Tam interaktif terminal 'launch' düğmesinden dogukancanerler.com adresinde açılır.
+SVG animasyonları azaltılmış hareket tercihini destekler; hero GIF için terminal-hero-static.png alternatifi pakettedir.
+
+TEKNOLOJİ KAPSAMI
+Eski README'de, paylaşılan portföy kodunun beceri listesinde ve bu konuşmada doğrulanan araçlar kullanıldı.
+OpenShift, Rancher ve Keycloak kullanıcının güncellemesiyle eklendi.
+Önceki sohbetlerin bu konuşmada paylaşılmamış içeriğine erişildiği varsayılmadı.
+Boot animasyonundaki rastgele servis isimleri ayrıca deneyim iddiası olarak alınmadı.
+LinkedIn URL'si eski README'deki URL'nin düzeltilmiş halidir; CV adresi önceki deploy dosya yoludur.

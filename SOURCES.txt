@@ -1,0 +1,13 @@
+GitHub README formatting and sanitization:
+https://github.com/github/markup
+https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections
+
+GitHub integration:
+https://github.com/Platane/snk
+https://github.com/actions/checkout
+
+Featured repository description checked against:
+https://github.com/dogukanc760/logify-stack
+
+Profile content: user-provided README, portfolio source, and confirmed tool additions.
+Custom assets: generated for this profile. No external image hosting required.
