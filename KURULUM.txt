@@ -1,0 +1,25 @@
+GITHUB PROFİL README KURULUMU
+
+1. GitHub profil deponu aç: dogukanc760/dogukanc760.
+   Böyle bir depo yoksa kullanıcı adınla aynı isimde public depo oluştur.
+2. Bu paketteki README.md dosyasını deponun köküne koy; mevcut README.md'yi değiştir.
+3. assets klasörünü de aynı deponun köküne yükle:
+   assets/hero.svg
+   assets/delivery-flow.svg
+4. Değişiklikleri commit et. README ve assets aynı commit içinde olabilir.
+5. github.com/dogukanc760 profilini aç.
+
+ÖNEMLİ
+Sadece README metnini kopyalarsan SVG dosyaları yüklenmediği için görseller çıkmaz.
+GitHub Actions, token, ek servis ya da ücretli araç gerekmez.
+Animasyonlar dekoratiftir; canlı altyapı durumu veya gerçek performans ölçümü değildir.
+İnteraktif kısımlar GitHub'ın desteklediği açılır bölümler ve bağlantılardır.
+Tam terminal etkileşimi portföy bağlantısından açılır.
+Azaltılmış hareket tercihini destekleyen görüntüleyicilerde SVG animasyonları durur.
+
+İÇERİK
+LinkedIn adresi gönderdiğin eski README'deki bozuk URL'nin düzeltilmiş halidir.
+CV adresi önceki deploy paketindeki dosya yoludur.
+Bu iki bağlantının güncel hesabını/CV'ni açtığını yayınladıktan sonra kontrol et.
+İş deneyimi ve teknoloji bilgileri paylaştığın portföy kaynaklarından alınmıştır.
+GitHub hesabında henüz bir değişiklik yapılmadı; bu paket yüklemeye hazırdır.
